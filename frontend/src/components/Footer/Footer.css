@@ -1,0 +1,116 @@
+footer {
+    border-top: .2rem solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    justify-content: space-evenly;
+}
+
+footer h2 {
+    text-decoration: underline;
+}
+
+.footer__links,
+.footer__legal {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    justify-content: center;
+    width: 100%;
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+    padding: 1rem;
+}
+
+.footer__logo {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+    flex: 1;
+}
+
+.footer__information {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 5;
+}
+
+.footer__blog,
+.footer__contact,
+.footer__customer,
+.footer__rights{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+    width: 100%;
+    flex: 2;
+}
+
+.footer__social {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 50%;
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+    padding: 1rem;
+}
+
+.footer__blog a,
+.footer__contact span,
+.footer__customer a,
+.footer__rights a,
+.footer__rights span,
+.footer__social a {
+    display: block;
+    width: 100%;
+    color: var(--white-color);
+    font-size: 2rem;
+    font-family: var(--secondary-font-family);
+    text-align: center;
+}
+
+.social__link:hover {
+    color: white;
+}
+
+.social_icon {
+    width: 4rem;
+    height: 4rem;
+} 
+
+.social_icon:hover {
+    color: white;
+}
+
+@media screen and (min-width:1024px) {
+    .footer__links {
+        flex-direction: row;
+        gap: .4rem;
+        justify-content: space-evenly;
+    }
+
+    .footer__blog {
+        width: 30%;
+    }
+
+    .footer__contact {
+        width: 30%;
+        gap: .2rem;
+    }
+
+    .footer__information {
+        flex-direction: row;
+        align-items: flex-start;
+    } 
+
+}

@@ -1,0 +1,126 @@
+.settings__main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings__section {
+    padding: 1.2rem;
+}
+
+.userProfile__actions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.userProfile__actions h2 {
+    color: tomato;
+    width: 100%;
+    cursor: pointer;
+}
+
+.previous__userAvatar {
+    width: 20%;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.previous__userAvatar__figure {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.previous__userAvatar {
+    width: 15rem;
+    height: 15rem;
+}
+
+.settings__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: var(--white-color);
+}
+
+.settings__form input,
+.settings__form textarea{
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: var(--secondary-font-family);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.settings__form textarea {
+    resize: none;
+}
+
+.settings__form label {
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: var(--secondary-font-family);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.addImgPost__icon {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.userProfile__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+
+.userProfile__actions .my__posts {
+    color : green;
+}
+
+.label_addAvatar {
+    cursor: pointer;
+}
+
+@media screen and (min-width:1024px){
+    .settings__main {
+        flex-direction: row;
+    }
+
+    .settings__section {
+        display : flex;
+        flex-wrap : wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap : 2.5rem;
+        flex: 2;
+    }
+
+    .settings__form {
+        width: 70%;
+    }
+
+    .userProfile__actions {
+        width: 70%;
+    }
+
+    aside {
+        flex: 1;
+    }
+}

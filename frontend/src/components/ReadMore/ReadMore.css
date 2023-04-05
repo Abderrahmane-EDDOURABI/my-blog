@@ -1,0 +1,7 @@
+.read__hide {
+    font-size: 2rem;
+    color: forestgreen;
+    font-weight: bold;
+    font-family: var(--text-font-family);
+    cursor: pointer;
+}

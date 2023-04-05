@@ -1,0 +1,126 @@
+:root {
+  --primary-color : #333;
+  --secondary-color : #666;
+  --light-gray : #999;
+  --white-smoke : #F5F5F5;
+  --white-color: #FFFF;
+  --main-font-family : 'Josefin Sans', sans-serif;
+  --secondary-font-family : 'Varela', sans-serif;
+  --text-font-family : 'Poppins', sans-serif;
+  --main-border : 1px solid var(--secondary-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  transition: all 500ms all;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white-smoke);
+}
+
+header,
+main,
+footer {
+  width: 95%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+p {
+  font-family: var(--text-font-family);
+  font-size: 1.8rem;
+  line-height: 2.1;
+  margin: 1rem 0 .8rem 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
+  text-align: center;
+  line-height: 2.1;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+  width: 100%;
+  font-family: var(--secondary-font-family);
+}
+
+span {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  display: block;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 3.1rem;
+}
+h3 {
+  font-size: 2.7rem;
+}
+h4 {
+  font-size: 2.3rem;
+}
+h5 {
+  font-size: 1.9rem;
+}
+
+figure,
+img {
+  display: block;
+  width: 95%;
+  margin: auto;
+}
+
+button {
+  display: block;
+  width: 50%;
+  margin: auto;
+  border: var(--main-border);
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: var(--secondary-font-family);
+}
+
+input[type=submit] {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-family: var(--secondary-font-family);
+  width: 50%;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+textarea {
+  resize: none;
+}

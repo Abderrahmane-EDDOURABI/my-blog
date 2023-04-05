@@ -1,0 +1,10 @@
+button {
+    width: 5rem;
+    height: 5rem;
+}
+
+button.active{
+    background-color: yellow;
+    color: black;
+    font-family: var(--main-font-family);
+}

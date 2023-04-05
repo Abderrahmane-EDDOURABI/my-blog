@@ -1,0 +1,77 @@
+.side__bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    justify-items: center;
+    justify-content: space-around;
+    background: VAR(--light-gray);
+}
+
+.side__bar h2 {
+    border-top: var(--main-border);
+    border-bottom: var(--main-border);
+}
+
+.aboutMe__sideBar,
+.categories__sideBar,
+.myPost__sideBar {
+    width: 100%;
+}
+
+.aboutMe__sideBar p,
+.myPost__sideBar p {
+    font-family: var(--main-font-family);
+    font-size: 3rem;
+}
+
+.categories__list, 
+.postDate__sideBar, 
+.myPost__sideBar{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe__sideBar,
+.myPost__sideBar,
+.categories__list a,
+.myPost__sideBar a {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-family: var(--main-font-family);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.social__links {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.social__links figure{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+}
+
+.social__links figure figcaption{
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+    
+    .categories__list {
+        flex-direction: row;
+    }
+
+}
